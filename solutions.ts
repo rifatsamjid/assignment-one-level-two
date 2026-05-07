@@ -5,3 +5,9 @@ function filterEvenNumbers(numbers: number[]):number[]{
 }
 
 
+// problem 2 
+
+function reverseString(text:string):string {
+    return text.split("").reverse().join('');
+}
+
