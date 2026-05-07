@@ -1,40 +1,37 @@
-// problem 1
 
 function filterEvenNumbers(numbers: number[]):number[]{
     return numbers.filter(number=>number%2===0)
 }
 
 
-// problem 2 
+ 
 
 function reverseString(text:string):string {
-    return text.split("").reverse().join('');
+    return `"${text.split("").reverse().join('')}"`;
 }
 
 
 
-
-// problem 3
 
 type StringOrNumber = string | number;
 
 function checkType(value : StringOrNumber):string {
     if(typeof value === 'string'){
-        return "String"
+        return `"String"`
     }else{
-        return "number"
+        return `"number"`
     }
 }
 
 
-// problem 4
+
 
 function getProperty<T, K extends keyof T>(obj:T,key:K):T[K]{
     return obj[key]
 }
 
 
-// problem 5
+
 
 interface Book {
     title: string;
@@ -50,7 +47,7 @@ function toggleReadStatus(book : Book):Book & {isRead:boolean} {
 }
 
 
-// problem 6
+
 
 class Person {
     name:string;
@@ -73,7 +70,7 @@ class Student extends Person {
 }
 
 
-// problem 7
+
 
 function getIntersection(arr1:number[],arr2:number[]):number[] {
 return arr1.filter(num=>arr2.includes(num))
