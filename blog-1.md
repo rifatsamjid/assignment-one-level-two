@@ -166,9 +166,9 @@ Instead of rewriting types:
 * We create slices using `Pick` and `Omit`
 * We avoid duplication and inconsistencies
 
-✔ Easier maintenance
-✔ Cleaner architecture
-✔ Less chance of bugs
+ Easier maintenance
+ Cleaner architecture
+ Less chance of bugs
 
 ---
 
